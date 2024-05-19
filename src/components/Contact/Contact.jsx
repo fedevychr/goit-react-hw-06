@@ -3,6 +3,8 @@ import { FaUser } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contactsSlice";
 
+import css from "./Contact.module.css";
+
 const Contact = ({ id, name, number }) => {
   const dispatch = useDispatch();
   const handleDelete = () => dispatch(deleteContact(id));

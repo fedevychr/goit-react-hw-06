@@ -5,6 +5,8 @@ import { nanoid } from "nanoid";
 import * as Yup from "yup";
 import { addContact } from "../../redux/contactsSlice";
 
+import css from "./ContactForm.module.css";
+
 const ContactSchema = Yup.object().shape({
   name: Yup.string()
     .min(3, "Too Short!")
